@@ -1,0 +1,103 @@
+body, html {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: aliceblue;
+}
+
+/*This is the Header styling*/
+.topHeader{
+    position: static;
+    width: 95%;
+}
+
+.menuStyle {
+    position: absolute;
+}
+
+.icon{
+    position: absolute;
+    right: 150px;
+}
+
+#profileIcon{
+    width: 100px;
+}
+
+#menuLinks {
+    color: #FF1493;
+    padding: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/*This is the content styling*/
+
+
+#projectHeadings {
+    text-align: center;
+    color: #FF1493;
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+#descriptions {
+    color: #FF1493;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+
+}
+
+.videoSection {
+    padding-top: 150px;
+    position: static;
+    max-width: 95%;
+    margin: auto;
+}
+
+#video01 {
+    position: static;
+    text-align: center;
+    padding: 100px;
+}
+
+#video02 {
+    position: static;
+    text-align: center;
+    padding: 100px;
+}
+
+#video03 {
+    position: static;
+    text-align: center;
+    padding: 100px;
+}
+
+#youtubeLinks {
+    padding: 20px;
+    font-family: sans-serif;
+    color: #FF1493;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*This is the footer styling*/
+.projectFooter {
+    padding-top: 200px;
+    color: #FF1493;
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#contacts{
+    padding-top: 20px;
+    color: #FF1493;
+    font-size: 40px;
+    font-family: sans-serif;
+}
