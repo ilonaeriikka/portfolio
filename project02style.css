@@ -7,24 +7,32 @@ body, html {
 }
 
 /*This is the Header styling*/
+
+
+
+/*container position + size*/
 .topHeader{
     position: static;
     width: 95%;
 }
 
+/*menu link position*/
 .menuStyle {
     position: absolute;
 }
 
+/*profile picture position*/
 .icon{
     position: absolute;
     right: 150px;
 }
 
+/*profile picture size*/
 #profileIcon{
     width: 100px;
 }
 
+/*menu link styling*/
 #menuLinks {
     color: #FF1493;
     padding: 40px;
@@ -32,9 +40,11 @@ body, html {
     font-family: sans-serif;
 }
 
+
+
 /*This is the content styling*/
 
-
+/*header styling*/
 #projectHeadings {
     text-align: center;
     color: #FF1493;
@@ -43,6 +53,7 @@ body, html {
     font-family: sans-serif;
 }
 
+/*body text styling*/
 #descriptions {
     color: #FF1493;
     font-size: 20px;
@@ -52,43 +63,30 @@ body, html {
 
 }
 
-.videoSection {
-    padding-top: 150px;
-    position: static;
-    max-width: 95%;
-    margin: auto;
-}
-
+/*video player size + position*/
 #video01 {
-    position: static;
+    padding-top: 150px;
     text-align: center;
-    padding: 100px;
+    margin: 0 auto;
 }
 
-#video02 {
-    position: static;
-    text-align: center;
-    padding: 100px;
-}
-
-#video03 {
-    position: static;
-    text-align: center;
-    padding: 100px;
-}
-
+/*caption styling*/
 #youtubeLinks {
-    padding: 20px;
     font-family: sans-serif;
     color: #FF1493;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
 
-/*This is the footer styling*/
+
+
+/*This is the Footer styling*/
+
+
 .projectFooter {
-    padding-top: 200px;
+    position: static;
+    padding-top: 100px;
     color: #FF1493;
     font-size: 18px;
     text-align: center;
@@ -101,3 +99,10 @@ body, html {
     font-size: 40px;
     font-family: sans-serif;
 }
+
+.simpleLogo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+
