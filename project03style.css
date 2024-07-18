@@ -5,24 +5,32 @@ body, html {
 }
 
 /*This is the Header styling*/
+
+
+
+/* position + width of the header*/
 .topHeader{
     position: static;
     width: 95%;
 }
 
+/*position + width of the menu links*/
 .menuStyle {
     position: absolute;
 }
 
+/*position + width of the profile icon*/
 .icon{
     position: absolute;
-    right: 150px;
+    right: 100px;
 }
 
+/*size of profile picture*/
 #profileIcon{
     width: 100px;
 }
 
+/*menu link styling*/
 #menuLinks {
     color: #FF1493;
     padding: 40px;
@@ -30,8 +38,17 @@ body, html {
     font-family: sans-serif;
 }
 
-/*This is the content styling*/
 
+
+
+
+
+/*This is the Content styling*/
+
+
+
+
+/*heading styling*/
 #projectHeadings {
     text-align: center;
     color: #FF1493;
@@ -40,6 +57,7 @@ body, html {
     font-family: sans-serif;
 }
 
+/*body text styling*/
 #descriptions {
     color: #FF1493;
     font-size: 20px;
@@ -49,20 +67,34 @@ body, html {
 
 }
 
+/*table size + position*/
 .images {
-    margin: auto;
-    max-width: 95%;
-    padding-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     text-align: center;
+    vertical-align: middle;
+    padding-top: 120px;
 }
 
-#imagesShown {
-    max-width: 700px; 
-    padding: 20px;
-    padding-bottom: 180px;
+/*table row sizing*/
+td {
+    width: 500px;
+    padding: 2%;
 }
+
+/*image sizing*/
+#imagesShown {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 /*This is the footer styling*/
+
+
 .projectFooter {
     padding-top: 200px;
     color: #FF1493;
@@ -77,3 +109,10 @@ body, html {
     font-size: 40px;
     font-family: sans-serif;
 }
+
+.simpleLogo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+
