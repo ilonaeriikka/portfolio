@@ -7,54 +7,117 @@ body, html {
 }
 
 /*this is the header styling*/
+
+/*division header position + sizing*/
 #headerStyle{
-    width: 100%;
-    padding-bottom: 50px
+    width: inherit;
+    height: inherit;
+    padding-bottom: 40%;
 
 }
 
+/*header styling + size + position*/
 #homeTitle {
     color: #FF1493;
+    position: relative;
     text-align: right;
     font-family: sans-serif;
     font-size: 130px;
-}
-
-#profilePicture {
-    max-width: 40%;
-    text-align: left;
-}
-
-#imageStyling {
-    border: 10px solid;
-
-}
-
-
-.firstProject{
-    max-width: 42%;
-    position: relative;
-    padding: 30px;
-
-}
-
-
-.secondProject{
     float: right;
-    padding: 30px;
-    max-width: 42%;
 }
 
-.threedeeProject{
-    padding: 30px;
-    max-width: 42%;
-    margin: 50px;
+/*profiel picture sizing + position*/
+#profilePicture {
+    padding-top: 150px;
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    float: left;
 }
+
+
+
+
+/*this is the Content styling*/
+
+
+/*
+all links over the images will be styled with this
+*/
+.pageLink{
+    font-family: sans-serif;
+    font-size: 120px;
+    color: #FF1493;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+
+
+/*bibelot link*/
+
+/*this styling is required to set the text to the center of the image*/
+.firstProject{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+/*this includes the positioning and styling of the text*/
+.firstLink{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*the above code repeats for all other links. 
+I think i could use the same code for all links 
+but there are small tweaks I would have to do that I am too lazy to do right now*/
+
+
+
+
+/*video link*/
+.secondProject{
+    position: relative;
+    margin-top: 300px;
+    text-align: center;
+    float: right;
+}
+
+.secondLink{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*3D link*/
+.thirdProject{
+    display: inline-block;
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.thirdLink{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*this is the footer styling*/
 
 .footerStyle{
+    width: inherit;
+    height: inherit;
     padding-top: 200px;
     padding-bottom: 100px;
-    width: 95%;
     margin: auto;
     text-align: center;
 }
@@ -79,4 +142,10 @@ body, html {
     color: #FF1493;
     font-size: 40px;
     font-family: sans-serif;
+}
+
+.simpleLogo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100px;
 }
