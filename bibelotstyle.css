@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 body, html {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -6,6 +11,13 @@ body, html {
     background-color: aliceblue;
 }
 
+
+/*@media screen and (max-width: 800px){
+    .galleryTwo {
+    width: 100%;
+    display: block;
+    }
+}*/
 /*This is the Header styling*/
 
 /*Container position + size*/
@@ -23,7 +35,7 @@ body, html {
 /*profile icon position*/
 .icon{
     position: absolute;
-    right: 150px;
+    right: 10%;
 }
 
 /*profile icon size*/
@@ -32,9 +44,10 @@ body, html {
 }
 
 /*menu link styling*/
-#menuLinks {
+.menuStyle .menuLinks {
+    display: block;
+    padding: 2%;
     color: #FF1493;
-    padding: 40px;
     font-size: 18px;
     font-family: sans-serif;
 }
@@ -62,34 +75,39 @@ body, html {
     font-family: sans-serif;
 }
 
+
+.gallery{
+    margin: 10%;
+    display: inline-block;
+}
+
+.galleryTwo{
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+}
+
+.galleryTwo img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
 /*image caption styling*/
-#captions {
-    color: #FF1493;
-    font-size: 14px;
+.gallery .descriptions, .galleryTwo .descriptions {
     text-align: center;
+    color: #FF1493;
+    font-size: 1.5vw;
     padding: 10px;
     font-family: sans-serif;
 }
 
-/*image gallery position + size*/
-.images {
-    position: static;
-    margin: 0 auto;
-    max-width: 95%;
-    text-align: center;
-}
-
-/*table cell size*/
-td {
-    width: 700px;
-    padding: 2%;
-}
-
-/*image sizing*/
-#imagesShown {
+.gallery img{
+    display: inline-block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
+
 
 
 
@@ -106,7 +124,7 @@ td {
 #contacts{
     padding-top: 20px;
     color: #FF1493;
-    font-size: 40px;
+    font-size: 200%;
     font-family: sans-serif;
 }
 
@@ -116,3 +134,13 @@ td {
     max-width: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .galleryTwo, .galleryTwo .descriptions {
+        display: block;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .gallery .descriptions{
+        font-size: 3vw;
+    }
+  }
