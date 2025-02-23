@@ -14,6 +14,7 @@ body, html {
 .topHeader{
     position: static;
     width: 95%;
+    padding-bottom: 50px;
 }
 
 /*menu link position*/
@@ -24,7 +25,7 @@ body, html {
 /*profile picture position*/
 .icon{
     position: absolute;
-    right: 150px;
+    right: 10%;
 }
 
 /*profile picture size*/
@@ -33,9 +34,10 @@ body, html {
 }
 
 /*menu link styling*/
-#menuLinks {
+.menuStyle .menuLinks {
+    display: block;
     color: #FF1493;
-    padding: 40px;
+    padding: 2%;
     font-size: 18px;
     font-family: sans-serif;
 }
@@ -65,7 +67,6 @@ body, html {
 
 /*video player size + position*/
 #video01 {
-    padding-top: 150px;
     text-align: center;
     margin: 0 auto;
 }
@@ -78,8 +79,40 @@ body, html {
     text-align: center;
 }
 
+.gallery{
+    margin: 5%;
+    margin-left: 30%;
+    width: 40%;
+    display: block;
+}
 
 
+.galleryTwo{
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+}
+
+.galleryTwo img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/*image caption styling*/
+.gallery .descriptions, .galleryTwo .descriptions {
+    text-align: center;
+    color: #FF1493;
+    font-size: 1.5vw;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.gallery img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
 
 /*This is the Footer styling*/
 
@@ -96,7 +129,7 @@ body, html {
 #contacts{
     padding-top: 20px;
     color: #FF1493;
-    font-size: 40px;
+    font-size: 200%;
     font-family: sans-serif;
 }
 
@@ -105,4 +138,17 @@ body, html {
     margin-bottom: 20px;
     max-width: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+    .galleryTwo, .galleryTwo .descriptions {
+        display: block;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .gallery .descriptions, .gallery{
+        font-size: 3vw;
+        width: 100%;
+        margin: auto;
+    }
+  }
 
