@@ -22,15 +22,17 @@ body, html {
     position: relative;
     text-align: right;
     font-family: sans-serif;
-    font-size: 130px;
+    font-size: 10vw;
     float: right;
+    padding-bottom: 20px;
 }
 
 /*profiel picture sizing + position*/
 #profilePicture {
-    padding-top: 150px;
+    padding-top: 10%;
+    margin-bottom: 5%;
     position: absolute;
-    max-width: 200px;
+    max-width: 20%;
     height: auto;
     float: left;
 }
@@ -41,73 +43,38 @@ body, html {
 /*this is the Content styling*/
 
 
-/*
-all links over the images will be styled with this
-*/
-.pageLink{
-    font-family: sans-serif;
-    font-size: 120px;
+
+
+.content {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.gallery {
+    margin: 1%;
+    display: inline-block;
+    width: 20%
+}
+
+.gallery .descriptions{
     color: #FF1493;
-    font-style: oblique;
-    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 2vw;
+    text-decoration: underline;
 }
-
-
-
-/*bibelot link*/
-
-/*this styling is required to set the text to the center of the image*/
-.firstProject{
+.gallery img{
     display: inline-block;
-    position: relative;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.gallery img:hover{
+    border: 5px solid #FF1493;
 }
 
-/*this includes the positioning and styling of the text*/
-.firstLink{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*the above code repeats for all other links. 
-I think i could use the same code for all links 
-but there are small tweaks I would have to do that I am too lazy to do right now*/
-
-
-
-
-/*video link*/
-.secondProject{
-    position: relative;
-    margin-top: 300px;
-    text-align: center;
-    float: right;
-}
-
-.secondLink{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-/*3D link*/
-.thirdProject{
-    display: inline-block;
-    position: relative;
-    margin-top: 200px;
-    text-align: center;
-}
-
-.thirdLink{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 
 
@@ -116,7 +83,7 @@ but there are small tweaks I would have to do that I am too lazy to do right now
 .footerStyle{
     width: inherit;
     height: inherit;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
     margin: auto;
     text-align: center;
@@ -140,7 +107,7 @@ but there are small tweaks I would have to do that I am too lazy to do right now
 #contacts{
     padding-top: 20px;
     color: #FF1493;
-    font-size: 40px;
+    font-size: 200%;
     font-family: sans-serif;
 }
 
