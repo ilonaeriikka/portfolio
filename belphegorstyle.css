@@ -1,0 +1,132 @@
+body, html {
+    /*basic html page styling, same for all project pages*/
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: aliceblue;
+}
+
+
+/*This is the Header styling*/
+
+/*Container position + size*/
+.topHeader{
+    position: static;
+    width: 95%;
+    padding-bottom: 50px; 
+}
+
+/*links position*/
+.menuStyle {
+    position: absolute;
+}
+
+/*profile icon position*/
+.icon{
+    position: absolute;
+    right: 10%;
+}
+
+/*profile icon size*/
+#profileIcon{
+    width: 100px;
+}
+
+/*menu link styling*/
+.menuStyle .menuLinks {
+    display: block;
+    padding: 2%;
+    color: #FF1493;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/*This is the content styling*/
+
+/*Header styling*/
+#projectHeadings {
+    text-align: center;
+    color: #FF1493;
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+/*Body text styling*/
+#descriptions {
+    color: #FF1493;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+/*video player size + position*/
+#video01 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*caption styling*/
+#youtubeLinks {
+    font-family: sans-serif;
+    color: #FF1493;
+    font-size: 20px;
+    text-align: center;
+}
+
+.galleryTwo{
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+}
+
+.galleryTwo img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/*image caption styling*/
+.galleryTwo .descriptions {
+    text-align: center;
+    color: #FF1493;
+    font-size: 1.5vw;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+
+/*This is the footer styling*/
+.projectFooter {
+    padding-top: 200px;
+    color: #FF1493;
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#contacts{
+    padding-top: 20px;
+    color: #FF1493;
+    font-size: 200%;
+    font-family: sans-serif;
+}
+
+.simpleLogo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .galleryTwo, .galleryTwo .descriptions {
+        display: block;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .gallery .descriptions{
+        font-size: 3vw;
+    }
+  }
