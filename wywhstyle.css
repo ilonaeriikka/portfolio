@@ -60,6 +60,20 @@ body, html {
     font-family: sans-serif;
 }
 
+#video01 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;    
+}
+
+/*caption styling*/
+#youtubeLinks {
+    font-family: sans-serif;
+    color: #FF1493;
+    font-size: 20px;
+    text-align: center;
+}
+
 .gallery{
     margin: 5%;
     margin-left: 30%;
