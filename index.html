@@ -1,17 +1,26 @@
+<!--Notes:
+- Consider the proper hierarchy of the grid. Which project should be the most prominent one? 
+- I'm unsure if the profile picture should be in the footer or not
+    Also unsure if the picture should be updated to a more recent one
+- The gifs on the front page should be updated
+    Do this once the project pages are done
+- Consider if the menu and profile picture in the project pages is too small
+- Remember to double check for mobile responsiveness
+    Right now the videos on the project pages are not size responsive
+- Would love to update to a better url but not sure how to do that without paying for hosting
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <!--This is the technical stuff-->
         <title>ilona pakarinen // portfolio</Title></title>
         <link rel="stylesheet" href="homestyle.css">
     </head>
 
 
+    <!--______________________________This is the header______________________________-->
     <body>
-
-        <!--______________________________This is the header______________________________-->
-       
         <style>
             @media screen and (max-width: 800px){
                 .gallery, .descriptions{
@@ -21,99 +30,95 @@
         </style>
        
         <div id="headerStyle">
-
-            <!--profile picture-->
-            <img src="images/multi.png" 
-            alt="This is where my own picture will be" 
-            id="profilePicture"> 
-           
-            <!--title-->
             <h1 id="homeTitle">
                 // ilona<br>pakarinen
             </h1>
-
-
         </div>
-        <!--_______________________________________________________________________________-->
+    <!--_______________________________________________________________________________-->
 
-        <div class="content">
 
-        <div class="gallery">
+
+
+
+    <!--______________________________This is the content______________________________-->
+
+        <h2 id="projectHeaderTop">
+                design & video production
+        </h2>
+
+                        <div class="content">
+
+                        <div class="gallery">
+                                            
+                        <a href="bibelot.html" class="shownWhen">
+                        
+                        <img src="gifs/nectarine-gif.gif" 
+                        alt="image not found">
+                        </a>
+
+                        <div class="descriptions">GRAPHIC DESIGN <br>& PRINT</div>
+                        </div>
+
+                        
+                        <div class="gallery">
+                        <a href="wywh.html" id="pageLink">
                             
-        <a href="bibelot.html" class="shownWhen">
-        
-        <img src="gifs/nectarine-gif.gif" 
-        alt="image not found">
-        </a>
+                        <img src="gifs/wishyouwerehere.gif" 
+                        alt="image not found">
 
-        <!--<div class="hide">-->
-        <div class="descriptions">BIBELOT</div>
-        </div>
+                        </a>
+                        <div class="descriptions">VIDEO & BRAND</div>
 
-        
-        <div class="gallery">
-        <a href="wywh.html" id="pageLink">
-            
-        <img src="gifs/wishyouwerehere.gif" 
-        alt="image not found">
-
-        </a>
-        <div class="descriptions">WISH YOU <br>WERE HERE</div>
-
-        </div>
-        <div class="gallery">
-        <a href="belphegor.html">
+                        </div>
+                        <div class="gallery">
+                        <a href="belphegor.html">
+                                    
+                            <img src="gifs/belphegor.gif" 
+                            alt="image not found">
                     
-            <img src="gifs/belphegor.gif" 
-            alt="image not found">
-    
-         </a>
-         <div class="descriptions">BELPHEGOR'S SUMMONING</div>
-        </div>
+                        </a>
+                        <div class="descriptions">ANIMATION</div>
+                        </div>
 
-        <div class="gallery">
-        <a href="video.html" id="pageLink">
-            
-            <img src="gifs/ghoulz-gif.gif" 
-            alt="image not found">
+                        <div class="gallery">
+                        <a href="video.html" id="pageLink">
+                            
+                            <img src="gifs/ghoulz-gif.gif" 
+                            alt="image not found">
 
-        </a>
-        <div class="descriptions">VIDEO</div>
-        </div>
+                        </a>
+                        <div class="descriptions">SHORT FORM CONTENT</div>
+                        </div>
     </div>
+    <!--_______________________________________________________________________________-->
 
 
 
-
-        <!--________________________This is the footer of the page________________________-->
+    <!--________________________This is the footer of the page________________________-->
         
         
         <div class="footerStyle">
+                        <h2 id="projectHeader">
+                            Contact me!
+                        </h2>
 
+                        <a href="https://www.instagram.com/p.ipatti/" 
+                            id="contacts">
+                            INSTAGRAM
+                        </a>
 
-            <!--instagram-->
-            <a href="https://www.instagram.com/p.ipatti/" 
-                id="contacts">
-                 INSTAGRAM
-            </a>
-
-            <!--email-->
-            <p id="contacts">
-                ilona.pakarinen@yahoo.com
-            </p>
-            
-            <!--logo-->
-            <img src="images/SIMPLE_LOGO copy.png" 
-            alt="logo" 
-            class="simpleLogo">
+                        <p id="contacts">
+                            ilona.pakarinen@yahoo.com
+                        </p>
+                        
+                        <img src="images/multi.png" 
+                        alt="This is where my own picture will be" 
+                        id="profilePicture"> 
 
 
         </div>
 
         <!--_______________________________________________________________________________-->
-
-
-
 
         
     </body>
