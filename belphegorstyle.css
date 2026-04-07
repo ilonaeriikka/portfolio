@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     /*basic html page styling, same for all project pages*/
     margin-top: 3%;
@@ -11,10 +16,10 @@ body, html {
 /*This is the Header styling*/
 
 /*Container position + size*/
-.topHeader{
+.topHeader {
     position: static;
     width: 95%;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
 }
 
 /*links position*/
@@ -23,13 +28,13 @@ body, html {
 }
 
 /*profile icon position*/
-.icon{
+.icon {
     position: absolute;
     right: 10%;
 }
 
 /*profile icon size*/
-#profileIcon{
+#profileIcon {
     width: 100px;
 }
 
@@ -42,109 +47,188 @@ body, html {
     font-family: sans-serif;
 }
 
-/*This is the content styling*/
 
-/*Header styling*/
+/*This is the Content styling*/
+
+.titleBlock {
+    padding-bottom: 4%;
+}
+
+#projectCategory {
+    text-align: left;
+    color: #FF1493;
+    padding-top: 10%;
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
 #projectHeadings {
-    text-align: center;
+    text-align: left;
     color: #FF1493;
-    padding-top: 100px;
-    font-size: 50px;
+    font-size: 10vw;
     font-family: sans-serif;
+    line-height: 90%;
+    padding-bottom: 4%;
 }
 
-/*Body text styling*/
-#descriptions {
-    color: #FF1493;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    font-family: sans-serif;
+.descriptionBlock {
+    margin-bottom: 6%;
 }
 
-.descriptions {
-  text-align: center;
-  color: #FF1493;
-  font-size: 1.5vw;
-  padding: 10px;
-  font-family: sans-serif;
+.descriptiveText {
+    font-size: 1.5vw;
+    color: #FF1493;
+    text-align: right;
+    padding-bottom: 16px;
+    font-family: sans-serif;
 }
 
 #descriptionsLinks {
-  display: block;       /* makes centering via margin work */
-  text-align: center;   /* centers multi-line text inside the link */
-  margin: 0.5rem auto;  /* centers the block horizontally */
-  max-width: 840px;     /* optional: limit width so centering is visible */
-  color: #FF1493;
-  font-size: 1.5vw;
-  font-family: sans-serif;
-}
-
-/*video player size + position*/
-#video01 {
-    text-align: center;
-    margin: 0 auto;
-}
-
-/*caption styling*/
-#youtubeLinks {
-    font-family: sans-serif;
-    color: #FF1493;
-    font-size: 20px;
-    text-align: center;
-}
-
-.galleryTwo{
-    display: inline-block;
-    margin: 2%;
-    width: 45%;
-}
-
-.galleryTwo img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-
-/*image caption styling*/
-.galleryTwo .descriptions {
-    text-align: center;
+    display: block;
     color: #FF1493;
     font-size: 1.5vw;
-    padding: 10px;
     font-family: sans-serif;
+    padding-bottom: 16px;
+    text-align: right;
 }
 
 
-/*This is the footer styling*/
-.projectFooter {
-    padding-top: 200px;
+/* Video row */
+
+.twoColGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.videoPlaceholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /*background-color: #ffc0da;*/
+}
+
+.videoPlaceholder iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Project sections */
+
+.projectSection {
+    margin-bottom: 6%;
+}
+
+.sectionLabel {
+    text-align: center;
+    color: #FF1493;
+    font-size: 3vw;
+    font-family: sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.sectionRow {
+    margin-bottom: 2rem;
+}
+
+.rowLabel {
+    color: #FF1493;
+    font-size: 1.8vw;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.threeColGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.gridItem {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /*background-color: #ffc0da;*/
+}
+
+.gridItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*this is the footer styling*/
+
+.footerStyle{
+    width: inherit;
+    height: inherit;
+    padding-top: 10%;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: right;
+}
+
+
+#projectHeader {
+    color: #FF1493;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 5vw;
+}
+
+#projectFooter {
+    padding-top: 20%;
     color: #FF1493;
     font-size: 18px;
-    text-align: center;
     font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 #contacts{
-    padding-top: 20px;
     color: #FF1493;
-    font-size: 200%;
+    font-size: 3vw;
     font-family: sans-serif;
 }
 
-.simpleLogo{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    max-width: 100px;
+/*profile picture sizing + position*/
+#profilePicture {
+    margin-bottom: 5%;
+    max-width: 15%;
+    height: auto;
+    float: right;
 }
 
+
+/* Responsive */
+
 @media only screen and (max-width: 600px) {
-    .galleryTwo, .galleryTwo .descriptions {
-        display: block;
-        width: 100%;
+    .twoColGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .threeColGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .descriptiveText {
         font-size: 3vw;
     }
-    .gallery .descriptions{
+
+    #descriptionsLinks {
         font-size: 3vw;
     }
-  }
+
+    .sectionLabel {
+        font-size: 5vw;
+    }
+
+    .rowLabel {
+        font-size: 4vw;
+    }
+
+    #projectCategory {
+        font-size: 5vw;
+    }
+}
