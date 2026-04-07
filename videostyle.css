@@ -1,3 +1,9 @@
+/*If your spacing looks weird, the below code might be missing*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 body, html {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -46,14 +52,23 @@ body, html {
 
 /*This is the content styling*/
 
-/*header styling*/
-#projectHeadings {
-    text-align: center;
+#projectCategory {
+    text-align: left;
     color: #FF1493;
-    padding-top: 100px;
-    font-size: 50px;
+    padding-top: 10%;
+    font-size: 3vw;
     font-family: sans-serif;
+    font-style: italic;
 }
+
+#projectHeadings {
+    text-align: left;
+    color: #FF1493;
+    font-size: 10vw;
+    font-family: sans-serif;
+    padding-bottom: 10%;
+}
+
 
 /*body text styling*/
 #descriptions {
@@ -72,73 +87,67 @@ body, html {
     padding-bottom: 50px;    
 }
 
-/*caption styling*/
-#youtubeLinks {
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*specifies amount of columns and size*/
+    grid-auto-rows: auto auto; /*specifies amount of rows and size*/
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.gallery p{
     font-family: sans-serif;
     color: #FF1493;
     font-size: 20px;
-    text-align: center;
-}
-
-.gallery{
-    margin: 5%;
-    margin-left: 30%;
-    width: 40%;
-    display: block;
+    text-align: justify;
 }
 
 
-.galleryTwo{
-    display: inline-block;
-    margin: 2%;
-    width: 45%;
+
+/*this is the footer styling*/
+
+.footerStyle{
+    width: inherit;
+    height: inherit;
+    padding-top: 10%;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: right;
 }
 
-.galleryTwo img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
 
-/*image caption styling*/
-.gallery .descriptions, .galleryTwo .descriptions {
-    text-align: center;
+#projectHeader {
     color: #FF1493;
-    font-size: 1.5vw;
-    padding: 10px;
     font-family: sans-serif;
+    font-style: italic;
+    font-size: 5vw;
 }
 
-.gallery img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-
-/*This is the Footer styling*/
-
-
-.projectFooter {
-    position: static;
-    padding-top: 100px;
+#projectFooter {
+    padding-top: 20%;
     color: #FF1493;
     font-size: 18px;
-    text-align: center;
     font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 #contacts{
-    padding-top: 20px;
     color: #FF1493;
-    font-size: 200%;
+    font-size: 3vw;
     font-family: sans-serif;
 }
 
-.simpleLogo{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    max-width: 100px;
+/*profile picture sizing + position*/
+#profilePicture {
+    margin-bottom: 5%;
+    max-width: 15%;
+    height: auto;
+    float: right;
 }
+
+/*mobile reactive code*/
 
 @media only screen and (max-width: 600px) {
     .galleryTwo, .galleryTwo .descriptions {
