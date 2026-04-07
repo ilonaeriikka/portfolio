@@ -1,9 +1,15 @@
+<!--Notes:
+- Update the copy in the blurbs
+- Crop some of the images again, some of them fit a bit awkwardly in the frames.
+- Update the colors on the promo video again.
+    If you have the time an energy, maybe consider redoing the promo material to be a bit... better
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <!--this is the technical stuff-->
-        <title>ilona pakarinen // wish you were here</title>
+        <title>ilona pakarinen // video & brand</title>
         <link rel="stylesheet" href="wywhstyle.css">
     </head>
 
@@ -16,9 +22,9 @@
         <!--menu links-->
         <div class="menuStyle">
             <a href="index.html" class="menuLinks">HOME</a>
-            <a href="bibelot.html" class="menuLinks">BIBELOT</a>
-            <a href="belphegor.html" class="menuLinks">BELPHEGOR'S SUMMONING</a>
-            <a href="video.html" class="menuLinks">VIDEO</a>
+            <a href="bibelot.html" class="menuLinks">PRINT & GRAPHIC DESIGN</a>
+            <a href="belphegor.html" class="menuLinks">ANIMATION</a>
+            <a href="video.html" class="menuLinks">SHORT FORM CONTENT</a>
         </div>
         
         <!--profile picture-->
@@ -37,16 +43,17 @@
 <!--_________________________________This is the page content__________________________________-->
 
 <div class="contentBody">
-
-    <!--Heading & Page description-->
     <div class="topHeader">
 
+        <h2 id="projectCategory">
+        VIDEO & BRAND
+        </h2>
         <!--Page heading-->
         <h1 id="projectHeadings">
             wish you were here
         </h1>
 
-        <!--Page description-->
+        <!--Page description
         <p id="descriptions">
             an arduino project reflecting on connections and relationships across continents. 
             <br>two arduinos in stuffed plushies trigger sound output through wifi.</p>
@@ -55,128 +62,109 @@
         <p id="descriptions">
             OCT - DEC 2025</p>
    
+    </div>-->
+
+    </div><!-- closes topHeader -->
+
+    <!-- + + + + + + + + + + + + + + + + + + Content sections + + + + + + + + + + + + + + + + + -->
+
+    <!-- INTRO: video embed + project description -->
+    <div class="introSection">
+        <div class="videoEmbed placeholder">
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/xgEfzVkhfgI ">
+            </iframe>
+        </div>
+        <div class="introText">
+            <p class="descriptiveText">Reflection on facilitating physical connection in long distance relationships.
+                                        Two stuffed toys, equipped with arduinos, trigger sound output when triggered through pressure input.  </p>
+            <br><br>
+            <p class="descriptiveFacts">Oct - Dec 2025 <b>// DATE</b></p>
+            <p class="descriptiveFacts">Physcial computing, crochet & graphic design <b>// MEDIUM</b></p>
+            <p class="descriptiveFacts">Product development, prototype execution & brand design <b>// ROLES</b></p>
+        </div>
     </div>
 
-    <!-- + + + + + + + + + + + + + + + + + + Image gallery + + + + + + + + + + + + + + + + + -->
-     <!--demo video-->
-                <div id="video01">
-
-                    <!--YouTube Embed-->
-                    <iframe 
-                        width="840" 
-                        height="472"
-                        src="https://www.youtube.com/embed/xgEfzVkhfgI" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-
-                    <!--caption / link-->
-                    <br>
-
-                    <a href="https://youtu.be/xgEfzVkhfgI" 
-                        id="youtubeLinks">
-                        demo video</a>
-
-                </div>
-    <div>
-
-    <div class="galleryTwo">
-
-        <img src="images/wywh/couple.png" 
-            alt="image not found">
-        <div class="descriptions">sample promo material 1</div>
+    <!-- BRAND -->
+    <h2 class="sectionHeading">BRAND</h2>
+    <div class="threeGrid">
+        <div class="placeholder">
+            <img src="images/wywh/couple.png">
+        </div>
+        <div class="gridText">
+            <p class="descriptiveText">The brand identity utilises hand drawn logos and illustrations as an extension of the comforting image of the plushies. 
+                The friendly illustrations contrast with the use of emptiness in the illustration, to imply the existence of a pair. 
+</p>
+        </div>
+        <div class="placeholder">
+            <img src="images/wywh/friend.png">
+        </div>
     </div>
 
-    <div class="galleryTwo">
-
-        <img src="images/wywh/friend.png" 
-            alt="image not found">
-        <div class="descriptions">sample promo material 2</div>
+    <!-- DEVELOPMENT -->
+    <h2 class="sectionHeading">DEVELOPMENT</h2>
+    <div class="threeGrid">
+        <div class="placeholder">
+            <img src="images/wywh/firstprototype.png">
+        </div>
+        <div class="placeholder">
+            <img src="images/wywh/soundtrigger.png">
+        </div>
+        <div class="placeholder">
+            <img src="images/wywh/fullassembly.png">
+        </div>
     </div>
-    
-    <div class="galleryTwo">
-
-        <img src="images/wywh/firstprototype.png" 
-            alt="image not found">
-        <div class="descriptions">first prototype was done with LEDs, push buttons and OSC messages</div>
-    </div>
-
-    <div class="galleryTwo">
-
-        <img src="images/wywh/soundtrigger.png" 
-            alt="image not found">
-        <div class="descriptions">attempts at triggering sound output</div>
-    </div>
-
-    <div class="galleryTwo">
-
-        <img src="images/wywh/fullproto.png" 
-            alt="image not found">
-        <div class="descriptions">final full prototype before assembly</div>
+    <div class="gallery">
+        <p class="descriptiveText">In the prototype phase, the arduinos communicate through wifi. 
+            The components include a battery pack, a speaker, the arduino and a pressure sensitivity plate.</p>
+        <p class="descriptiveText">The pressure plate is placed directly under the crochet surface of the plushie, so that when it is squeezed, the sound output is triggered on the other plushie. 
+            The speakers produce the sound of a purring cat, which in turn gives a slight vibration, making the plushies themselves seem as if they are purring. </p>
     </div>
 
-    <div class="galleryTwo">
-
-        <img src="images/wywh/fullassembly.png" 
-            alt="image not found">
-        <div class="descriptions">final assembly of components</div>
+    <!-- EXHIBIT -->
+    <h2 class="sectionHeading">EXHIBIT</h2>
+    <div class="threeGrid">
+        <div class="placeholder">
+            <img src="images/wywh/exhibit01.png">
+        </div>
+        <div class="placeholder">
+            <img src="images/wywh/exhibit.png">
+        </div>
+        <div class="placeholder">
+            <img src="images/wywh/exhibit02.png">
+        </div>
     </div>
 
 
-    <div class="galleryTwo">
 
-        <img src="images/wywh/exhibit.png" 
-            alt="image not found">
-        <div class="descriptions">Demo Day Exhibit presentation</div>
-    </div>
 
-    <div class="galleryTwo">
-
-        <img src="images/wywh/exhibit01.png" 
-            alt="image not found">
-        <div class="descriptions">exhibit 01</div>
-    </div>
-
-    <div class="galleryTwo">
-
-        <img src="images/wywh/exhibit02.png" 
-            alt="image not found">
-        <div class="descriptions">exhibit 02</div>
-    </div>
-
-    <div class="galleryTwo">
-
-        <img src="images/wywh/exhibit03.png" 
-            alt="image not found">
-        <div class="descriptions">exhibit 03</div>
-    </div>
-
-    </div>
-    <!-- + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
     <!--_____________________________________________________________________________________-->
     
-    <!--___________________________________This is the footer___________________________________-->
+    <!--________________________This is the footer of the page________________________-->
         
         
-     <div class="projectFooter">
+        <div class="footerStyle">
+                        <h2 id="projectHeader">
+                            Contact me!
+                        </h2>
 
-        <!--instagram link-->
-        <a href="https://www.instagram.com/michaelangilona/" 
-            id="contacts">
-            INSTAGRAM</a>
+                        <a href="https://www.instagram.com/p.ipatti/" 
+                            id="contacts">
+                            INSTAGRAM
+                        </a>
 
-        <!--email-->
-        <p id="contacts">
-            ilona.pakarinen@yahoo.com</p>
+                        <p id="contacts">
+                            ilona.pakarinen@yahoo.com
+                        </p>
+                        
+                        <img src="images/multi.png" 
+                        alt="Looks like theres something wrong with the image" 
+                        id="profilePicture"> 
 
-        <!--logo-->
-        <img src="images/SIMPLE_LOGO copy.png" 
-            alt="logo" 
-            class="simpleLogo">
-    </div>
-    <!--________________________________________________________________________________________-->
+
+        </div>
+
+        <!--_______________________________________________________________________________-->
 
     </div>
     
