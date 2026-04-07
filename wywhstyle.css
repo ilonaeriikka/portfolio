@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 body, html {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -42,14 +47,24 @@ body, html {
 
 /*This is the Content styling*/
 
-/*Header styling*/
-#projectHeadings {
-    text-align: center;
+#projectCategory {
+    text-align: left;
     color: #FF1493;
-    padding-top: 100px;
-    font-size: 50px;
+    padding-top: 10%;
+    font-size: 3vw;
     font-family: sans-serif;
+    font-style: italic;
 }
+
+#projectHeadings {
+    text-align: left;
+    color: #FF1493;
+    font-size: 10vw;
+    font-family: sans-serif;
+    line-height: 90%;
+    padding-bottom: 10%;
+}
+
 
 /*Body text styling*/
 #descriptions {
@@ -60,75 +75,161 @@ body, html {
     font-family: sans-serif;
 }
 
-#video01 {
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 50px;    
+/* ---- Intro section: video (left 2/3) + text (right 1/3) ---- */
+.introSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
 }
 
-/*caption styling*/
-#youtubeLinks {
-    font-family: sans-serif;
-    color: #FF1493;
-    font-size: 20px;
-    text-align: center;
+/* Responsive 16:9 iframe wrapper */
+.videoEmbed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.videoEmbed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
-.gallery{
-    margin: 5%;
-    margin-left: 30%;
-    width: 40%;
+/* Pink placeholder boxes */
+.placeholder {
+    background-color: #ffc0da;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;
+
+.videoEmbed.placeholder {
+    aspect-ratio: unset;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.galleryTwo{
-    display: inline-block;
-    margin: 2%;
-    width: 45%;
-}
-
-.galleryTwo img{
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-
-
-.gallery .descriptions, .galleryTwo .descriptions {
+/* Section headings (BRAND, DEVELOPMENT, EXHIBIT) */
+.sectionHeading {
     text-align: center;
     color: #FF1493;
-    font-size: 1.5vw;
-    text-align: center;
-    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 3vw;
     font-family: sans-serif;
 }
 
+/* 2-column gallery: image left, text right */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery .placeholder img {
+    height: 100%;
+    object-fit: cover;
+}
 
-/*This is the footer styling*/
-.projectFooter {
-    padding-top: 200px;
+/* 3-column image grid */
+.threeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.threeGrid img {
+    width: 100%;
+}
+.threeGrid .placeholder img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center text block inside threeGrid */
+.gridText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Descriptive text inside sections */
+.descriptiveText {
+    font-size: 1.5vw;
+    color: #FF1493;
+    text-align: justify;
+    padding-left: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+.descriptiveFacts {
+    font-size: 1.5vw;
+    color: #FF1493;
+    text-align: right;
+    padding-left: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+
+
+
+/*this is the footer styling*/
+
+.footerStyle{
+    width: inherit;
+    height: inherit;
+    padding-top: 10%;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: right;
+}
+
+
+#projectHeader {
+    color: #FF1493;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 5vw;
+}
+
+#projectFooter {
+    padding-top: 20%;
     color: #FF1493;
     font-size: 18px;
-    text-align: center;
     font-family: sans-serif;
+    padding-bottom: 50px;
 }
 
 #contacts{
-    padding-top: 20px;
     color: #FF1493;
-    font-size: 200%;
+    font-size: 3vw;
     font-family: sans-serif;
 }
 
-.simpleLogo{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    max-width: 100px;
+/*profile picture sizing + position*/
+#profilePicture {
+    margin-bottom: 5%;
+    max-width: 15%;
+    height: auto;
+    float: right;
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,5 +242,17 @@ body, html {
         font-size: 3vw;
         width: 100%;
         margin: auto;
+    }
+    .introSection,
+    .gallery,
+    .threeGrid {
+        grid-template-columns: 1fr;
+    }
+    .descriptiveText {
+        font-size: 3vw;
+        padding-left: 0;
+    }
+    .sectionHeading {
+        font-size: 6vw;
     }
   }
